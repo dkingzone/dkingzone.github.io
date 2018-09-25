@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正方形</title>
+    <link rel="stylesheet" href="shape.css">
+    <link rel="stylesheet" href="animate.css">
+</head>
+<div class="all">
+    <header>几何计算器</header>
+    <div class="input">
+        <div class="shape"><img src="image/3.png" alt=""></div>
+        <div id="txt">正方形</div>
+        <div class="a">
+            <input type="text" id="r" placeholder="请输入边长">
+            <input type="button" id="btn" value="计算">
+        </div>
+    </div>
+    <footer>©法天隆运至诚先觉体元立极敷文奋武钦明孝慈神圣纯皇帝</footer>
+</div>
+<script>
+    var btn=document.querySelector('#btn');
+    var r=document.querySelector('#r');
+    var txt=document.querySelector('.txt');
+    var a=document.querySelector('.a');
+    var c=document.querySelector('.input');
+
+    btn.addEventListener('click',function () {
+        r=r.value;
+        r=parseFloat(r);
+
+        var area=r*r;
+        var s=4*r;
+
+        document.getElementById('txt').innerHTML = "边长为"+r+"正方形";
+
+        a.setAttribute("class","di");
+        setTimeout(function f(){
+        a.style.display='none';
+        var d1=document.createElement('div');
+        d1.setAttribute("class","b");
+        d1.innerHTML ='<div>周长:</div>'+s.toFixed(3);
+        c.appendChild(d1);
+
+        var d2=document.createElement('div');
+        d2.setAttribute("class","b");
+        d2.innerHTML='<div>面积:</div>'+area.toFixed(3);
+        c.appendChild(d2);
+    },1000)
+    })
+</script>
+</html>

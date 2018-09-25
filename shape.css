@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+
+}
+.all{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    font-size: 35px;
+    color: #3e3e3e;
+    margin-top: 3%;
+    animation-name:rollIn;
+    animation-duration: 1s;
+}
+.shape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #a2a2a2;
+    animation-name: zoomInDown;
+    animation-duration: 1s;
+
+}
+#txt{
+    margin-bottom: 70px;
+    animation-name: zoomInDown;
+    animation-duration: 1.5s;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    position: fixed;
+    bottom: 3%;
+    font-size: 20px;
+    color: #a3a3a3;
+    text-align: center;
+}
+#r{
+    width: 240px;
+    height: 45px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    animation-name: zoomInDown;
+    animation-duration: 1.5s;
+}
+#angle{
+    width: 240px;
+    height: 45px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    animation-name: zoomInDown;
+    animation-duration: 2s;
+}
+#side{
+    width: 240px;
+    height: 45px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    animation-name: zoomInDown;
+    animation-duration: 2s;
+}
+#btn{
+    width: 180px;
+    height: 45px;
+    background-color: #009916;
+    color:#fff ;
+    border-radius: 10%;
+    font-size: 20px;
+    animation-name: zoomIn;
+    animation-duration: 3s;
+}
+#btn:hover{
+    width: 200px;
+    height: 50px;
+}
+.b{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: firebrick;
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.di{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: zoomOutDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
