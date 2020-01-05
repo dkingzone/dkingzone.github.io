@@ -39,10 +39,13 @@
         angle=parseFloat(angle);
         side=side.value;
         side=parseFloat(side);
-
-        var s=r+angle+side;
-        var area=Math.sqrt(s/2*(s/2-r)*(s/2-angle)*(s/2-side));
-
+        if(r+angle>side&&r+side>angle&&side+angle>r){
+            var s=r+angle+side;
+            var area=Math.sqrt(s/2*(s/2-r)*(s/2-angle)*(s/2-side));
+        }else{
+            var s="数据有误！";
+            var area="null";
+        }
         document.getElementById('txt').innerHTML = "边长分别为"+r+","+angle+","+side+"的三角形";
 
         a.setAttribute("class","di");
