@@ -43,8 +43,7 @@
             var s=r+angle+side;
             var area=Math.sqrt(s/2*(s/2-r)*(s/2-angle)*(s/2-side));
         }else{
-            var s="数据有误！";
-            var area="null";
+            alert("数据有误！");
         }
         document.getElementById('txt').innerHTML = "边长分别为"+r+","+angle+","+side+"的三角形";
 
